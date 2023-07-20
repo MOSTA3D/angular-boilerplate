@@ -1,0 +1,5 @@
+<ng-container [ngSwitch]="filterType">
+    <app-text-filter *ngSwitchCase="'text'"></app-text-filter>
+    <app-range-filter *ngSwitchCase="'range'"></app-range-filter>
+    <app-select-filter *ngSwitchCase="'select'"></app-select-filter>
+</ng-container>
